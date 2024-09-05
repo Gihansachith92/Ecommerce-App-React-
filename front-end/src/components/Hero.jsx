@@ -18,6 +18,7 @@ const Hero = () => {
           </div>
       </div>
       {/* hero right side */}
+      <img src={} alt="" />
     </div>
   )
 }
