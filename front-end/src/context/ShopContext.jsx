@@ -74,13 +74,15 @@ const ShopContextProvider = (props) => {
         }
       }
     }
+    return totalAmount;
   }
 
   const value = {
       products, currency , delivery_fee,
       search,setSearch,showSearch,setShowSearch,
       cartItems,addToCart,
-      getCartCount,updateQuantity
+      getCartCount,updateQuantity,
+      getCartAmount
   }
 
  return(
