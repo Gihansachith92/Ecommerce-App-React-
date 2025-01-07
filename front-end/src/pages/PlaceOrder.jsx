@@ -1,5 +1,6 @@
 import React from 'react'
 import Title from '../components/Title'
+import CartTotal from '../components/CartTotal'
 
 const PlaceOrder = () => {
   return (
@@ -27,6 +28,22 @@ const PlaceOrder = () => {
          </div>
          <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="number" placeholder='Phone' />
 
+      </div>
+
+      {/* -------Right side -------------- */}
+      <div className='mt-8 '>
+     
+         <div className='mt-8 min-w-80'>
+            <CartTotal/>
+         </div>
+         
+         <div className='mt-12'>
+            <Title text1={'PAYMENT'} text2={'METHOD'}/>
+            {/* -------Payment method selection */}
+            <div className="flex gap-3 flex-col lg:flex-row">
+
+            </div>
+         </div>
       </div>
     </div>
   )
